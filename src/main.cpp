@@ -4,10 +4,10 @@
 
 int main() {
     PWEParser pweParser;
-    pweParser.pack("C:\\Users\\sol\\CLionProjects\\windows-pwe\\uv.yaml",
-                   "C:\\Users\\sol\\CLionProjects\\windows-pwe\\uv.pwe");
-    pweParser.unpack("C:\\Users\\sol\\CLionProjects\\windows-pwe\\uv.pwe",
-                     "C:\\Users\\sol\\CLionProjects\\windows-pwe\\uvunpackked.yaml");
+    pweParser.pack("C:\\Users\\sol\\CLionProjects\\windows-pwe\\pwe_playbook",
+                   "C:\\Users\\sol\\CLionProjects\\windows-pwe\\playbook.pwe");
+    pweParser.unpack("C:\\Users\\sol\\CLionProjects\\windows-pwe\\playbook.pwe",
+                     "C:\\Users\\sol\\CLionProjects\\windows-pwe\\uvunpackked");
 
     YAML::Node config = YAML::LoadFile("C:\\Users\\sol\\CLionProjects\\windows-pwe\\uv.yaml");
     for (auto steps : config["steps"]) {
